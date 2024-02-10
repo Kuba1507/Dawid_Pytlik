@@ -1,3 +1,5 @@
+@use 'colors' as *;
+
 *,
 *::before,
 *::after {
@@ -14,6 +16,74 @@ html {
 
 body {
 	position: relative;
-	background-color: $cold-steel;
+	background-color: $background;
 	font-size: 1.6rem;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: min(100%, 1200px);
+}
+
+.nav {
+	height: 80px;
+	width: 100%;
+	background-color: $dark;
+
+	.wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 100%;
+	}
+
+	&__logo {
+		display: flex;
+		align-items: center;
+		padding: 0 1em;
+		color: $white;
+		text-decoration: none;
+
+		img {
+			width: 35px;
+			height: 35px;
+		}
+	}
+
+	&__navbar {
+		position: fixed;
+		top: 80px;
+		height: calc(100vh - 80px);
+		width: 100%;
+		font-family: 'Roboto', sans-serif;
+		background-color: $dark;
+		text-align: center;
+		list-style: none;
+		transform: translateX(-100%);
+
+		&-item {
+			display: block;
+			padding: 0 1em;
+			font-size: 1.7rem;
+			line-height: 80px;
+
+			&-link {
+				text-decoration: none;
+				color: $white;
+			}
+		}
+	}
+
+	&__burger-btn {
+		display: block;
+		padding: 1em;
+		cursor: pointer;
+
+		.line {
+			margin: 6px 0;
+			height: 2px;
+			width: 30px;
+			background-color: $yellow;
+		}
+	}
 }

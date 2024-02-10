@@ -1,0 +1,20 @@
+@media (min-width: 768px) {
+	.nav {
+		&__navbar {
+			position: relative;
+			top: inherit;
+			height: auto;
+			width: auto;
+			background-color: transparent;
+			transform: translateX(0);
+
+			&-item {
+				display: inline-block;
+			}
+		}
+
+		&__burger-btn {
+			display: none;
+		}
+	}
+}
