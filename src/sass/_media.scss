@@ -5,11 +5,16 @@
 			top: inherit;
 			height: auto;
 			width: auto;
+			border-top: none;
 			background-color: transparent;
 			transform: translateX(0);
 
 			&-item {
 				display: inline-block;
+
+				&-link {
+					padding: 1.4em 0.25em;
+				}
 			}
 		}
 
