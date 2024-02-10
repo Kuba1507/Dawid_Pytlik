@@ -37,6 +37,10 @@ body {
 		height: 100%;
 	}
 
+	.show-mobile {
+		transform: translateX(0);
+	}
+
 	&__logo {
 		display: flex;
 		align-items: center;
@@ -60,6 +64,7 @@ body {
 		text-align: center;
 		list-style: none;
 		transform: translateX(-100%);
+		transition: transform 0.4s;
 
 		&-item {
 			display: block;
