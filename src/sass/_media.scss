@@ -1,5 +1,9 @@
 @media (min-width: 768px) {
 	.nav {
+		&__logo {
+			font-size: 2rem;
+		}
+
 		&__navbar {
 			position: relative;
 			top: inherit;
@@ -20,6 +24,53 @@
 
 		&__burger-btn {
 			display: none;
+		}
+	}
+
+	.header {
+		&__box {
+			&-description {
+				font-size: 1.7rem;
+			}
+
+			&-heading {
+				font-size: 3rem;
+			}
+
+			&-cta-button {
+				width: 40%;
+				font-size: 1.4rem;
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.header {
+		height: 650px;
+		background-image: url('../img/hero-large.jpg');
+		background-position: 75% 70%;
+
+		&__box {
+			align-items: flex-start;
+			text-align: left;
+
+			&-description {
+				font-size: 1.8rem;
+			}
+
+			&-heading {
+				font-size: 4rem;
+
+				span {
+					display: block;
+				}
+			}
+
+			&-cta-button {
+				width: 25%;
+				font-size: 1.5rem;
+			}
 		}
 	}
 }

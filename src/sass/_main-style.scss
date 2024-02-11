@@ -26,10 +26,13 @@ body {
 }
 
 .nav {
+	position: fixed;
 	height: 80px;
 	width: 100%;
 	background-color: $dark;
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+	opacity: 0.98;
+	z-index: 999;
 
 	.wrapper {
 		display: flex;
@@ -47,7 +50,7 @@ body {
 		align-items: center;
 		padding: 1em;
 		font-family: 'Lora', sans-serif;
-		font-size: 2rem;
+		font-size: 1.8rem;
 		text-transform: uppercase;
 		color: $white;
 		text-decoration: none;
@@ -108,5 +111,66 @@ body {
 			width: 30px;
 			background-color: $yellow;
 		}
+	}
+}
+
+.header {
+	position: relative;
+	height: 600px;
+	background-image: url('../img/hero-small.jpg');
+	background-size: cover;
+	background-position: 75% 50%;
+	background-repeat: no-repeat;
+
+	.wrapper {
+		height: 100%;
+	}
+
+	&__box {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 80px 1.25em 0 1.25em;
+		height: 100%;
+		text-align: center;
+		z-index: 1;
+
+		&-description {
+			font-family: 'Roboto', sans-serif;
+			font-weight: 300;
+			color: #ededed;
+		}
+
+		&-heading,
+		&-cta-button {
+			font-family: 'Lora', sans-serif;
+		}
+
+		&-heading {
+			margin-top: 0.25em;
+			color: $white;
+		}
+
+		&-cta-button {
+			padding: 1em;
+			margin-top: 4em;
+			width: 50%;
+			font-weight: bold;
+			border: none;
+			background-color: $yellow;
+			text-transform: uppercase;
+			cursor: pointer;
+		}
+	}
+
+	&__shadow {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(0, 0, 0, 0.5);
 	}
 }
