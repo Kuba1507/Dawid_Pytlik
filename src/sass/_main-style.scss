@@ -1,5 +1,4 @@
 @use 'colors' as *;
-@use 'animations' as *;
 
 *,
 *::before,
@@ -162,7 +161,13 @@ body {
 			border: none;
 			background-color: $yellow;
 			text-transform: uppercase;
+			transition: background-color 0.2s, color 0.2s;
 			cursor: pointer;
+
+			&:hover {
+				background-color: $dark;
+				color: $yellow;
+			}
 		}
 	}
 
