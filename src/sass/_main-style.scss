@@ -277,6 +277,8 @@ main {
 				width: 85%;
 				border: 1px solid $yellow;
 				border-radius: 8px;
+				transition: background-color 0.3s;
+				z-index: 5;
 
 				&-icon {
 					margin-top: 0.5em;
@@ -303,6 +305,10 @@ main {
 						line-height: 1.5em;
 						color: rgb(184, 184, 184);
 					}
+				}
+
+				&:hover {
+					background-color: rgb(35, 35, 35);
 				}
 			}
 		}
