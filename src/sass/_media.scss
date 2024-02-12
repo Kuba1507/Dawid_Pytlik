@@ -80,6 +80,25 @@
 			.split {
 				transform: rotate(180deg) translateY(200px);
 			}
+
+			.cards-box {
+				flex-direction: row;
+				align-items: flex-start;
+				justify-content: center;
+				flex-wrap: wrap;
+				padding: 1em 0;
+
+				&__card {
+					flex-direction: row;
+					margin: 1.5em 1em;
+					height: 160px;
+					width: 45%;
+
+					&-icon {
+						margin: 0 0.75em 0 0;
+					}
+				}
+			}
 		}
 	}
 }
