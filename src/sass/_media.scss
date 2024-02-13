@@ -120,13 +120,38 @@
 				}
 			}
 		}
+
+		.questions {
+			&__box {
+				flex-direction: row;
+				justify-content: space-between;
+				padding: 1.5em;
+
+				&-text {
+					text-align: left;
+
+					h3 {
+						font-size: 3.1rem;
+					}
+
+					p {
+						font-size: 1.8rem;
+					}
+				}
+
+				&-contact {
+					margin-top: 0;
+					padding: 1.25em 2.75em;
+				}
+			}
+		}
 	}
 }
 
 @media (min-width: 992px) {
 	.header {
 		height: 650px;
-		background-image: url('../img/hero-large.jpg');
+		background-image: url("../img/hero-large.jpg");
 		background-position: 75% 70%;
 
 		&__box {
@@ -179,6 +204,26 @@
 					margin: 1.5em 3.5em;
 					height: 170px;
 					width: 35%;
+				}
+			}
+		}
+
+		.questions {
+			.wrapper {
+				width: min(100%, 1080px);
+			}
+
+			&__box {
+				padding: 2.5em;
+
+				&-text {
+					h3 {
+						font-size: 3.5rem;
+					}
+
+					p {
+						font-size: 1.9rem;
+					}
 				}
 			}
 		}
