@@ -1,16 +1,37 @@
-const burgerBtn = document.querySelector('.nav__burger-btn')
-const navigation = document.querySelector('.nav__navbar')
-const navItems = document.querySelectorAll('.nav__navbar-item-link')
+const burgerBtn = document.querySelector(".nav__burger-btn");
+const navigation = document.querySelector(".nav__navbar");
+const navItems = document.querySelectorAll(".nav__navbar-item-link");
+
+let filterItem = document.querySelector(".items-links");
+let filteredImages = document.querySelectorAll(".project-img");
 
 const handleNav = () => {
-	navigation.classList.toggle('show-mobile')
-}
+	navigation.classList.toggle("show-mobile");
+};
 
 const closeNav = () => {
-	navigation.classList.remove('show-mobile')
-}
+	navigation.classList.remove("show-mobile");
+};
 
-burgerBtn.addEventListener('click', handleNav)
-navItems.forEach(item => {
-	item.addEventListener('click', closeNav)
-})
+burgerBtn.addEventListener("click", handleNav);
+navItems.forEach((item) => {
+	item.addEventListener("click", closeNav);
+});
+
+window.addEventListener("load", () => {
+	filterItem.addEventListener("click", (selectedItem) => {
+		if (selectedItem.target.classList.contains("items-links__link")) {
+			document.querySelector(".menu-active").classList.remove("menu-active");
+			selectedItem.target.classList.add("menu-active");
+			let filterName = selectedItem.target.getAttribute("data-name");
+			filteredImages.forEach((image) => {
+				let filterImages = image.getAttribute("data-name");
+				if (filterImages == filterName || filterName == "all") {
+					image.style.display = "block";
+				} else {
+					image.style.display = "none"
+				}
+			});
+		}
+	});
+});
