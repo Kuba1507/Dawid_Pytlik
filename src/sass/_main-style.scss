@@ -512,4 +512,57 @@ main {
 			}
 		}
 	}
+
+	.contact {
+		position: relative;
+		margin-top: 6em;
+		background-color: $yellow;
+
+		.section-title {
+			&::after {
+				content: "Skontaktuj się";
+				color: $darker;
+			}
+
+			&::before {
+				background-color: $darker;
+			}
+		}
+
+		&__tilt {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 30px;
+			transform: rotate(180deg) scaleX(-1) translateY(30px);
+		}
+
+		&__hero {
+			position: relative;
+			margin-top: 3em;
+			height: 400px;
+			background-image: url("../img/contact-bg.jpg");
+			background-size: cover;
+			background-position: 50% 20%;
+
+			&-tilt {
+				position: absolute;
+				top: 0;
+				width: 100%;
+				height: 30px;
+				transform: scaleX(-1);
+				z-index: 2;
+			}
+
+			&-shadow {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-color: rgba(0, 0, 0, 0.65);
+				z-index: 1;
+			}
+		}
+	}
 }
