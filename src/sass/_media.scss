@@ -145,6 +145,19 @@
 				}
 			}
 		}
+
+		.gallery {
+			.items-links {
+				justify-content: center;
+
+				&__link {
+					margin: 0.75em 0.5em;
+					padding: 0.8em 1em;
+					width: 180px;
+					font-size: 1.4rem;
+				}
+			}
+		}
 	}
 }
 
@@ -224,6 +237,20 @@
 					p {
 						font-size: 1.9rem;
 					}
+				}
+			}
+		}
+
+		.gallery {
+			.gallery-container {
+				width: 100%;
+			}
+
+			.items-links {
+				&__link {
+					margin: 0.75em 0.5em;
+					width: 185px;
+					font-size: 1.5rem;
 				}
 			}
 		}
