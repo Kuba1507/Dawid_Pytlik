@@ -600,3 +600,25 @@ main {
 		}
 	}
 }
+
+.footer {
+	padding: 1em;
+	color: rgb(206, 206, 206);
+	background-color: $dark;
+	border-top: 1px solid $background;
+
+	&__mobile {
+		font-family: "Roboto", sans-serif;
+		font-weight: 400;
+		text-align: center;
+		font-size: 1.7rem;
+
+		&-author {
+			display: none;
+			font-size: 1.3rem;
+			margin-top: 1em;
+			color: rgb(170, 170, 170);
+			font-weight: 300;
+		}
+	}
+}

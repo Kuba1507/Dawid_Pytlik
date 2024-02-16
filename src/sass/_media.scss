@@ -193,6 +193,14 @@
 				}
 			}
 		}
+
+		.footer {
+			&__mobile {
+				&-author {
+					display: block;
+				}
+			}
+		}
 	}
 }
 
