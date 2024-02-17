@@ -1,4 +1,4 @@
-@media (max-width: 370px) {
+@media (max-width: 420px) {
 	.contact {
 		&__hero {
 			&-box {
@@ -207,7 +207,7 @@
 @media (min-width: 992px) {
 	.header {
 		height: 650px;
-		background-image: url("../img/hero-large.jpg");
+		background-image: url('../img/hero-large.jpg');
 		background-position: 75% 70%;
 
 		&__box {
