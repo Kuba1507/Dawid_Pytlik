@@ -325,4 +325,21 @@
 			}
 		}
 	}
+
+	.footer {
+		&__desktop {
+			display: flex;
+		}
+
+		&__mobile {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 1em;
+
+			&-author {
+				margin-top: 0;
+			}
+		}
+	}
 }
