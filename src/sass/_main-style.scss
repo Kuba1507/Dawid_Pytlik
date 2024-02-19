@@ -660,4 +660,17 @@ main {
 			font-weight: 300;
 		}
 	}
+
+	.storyset-info {
+		margin-top: 1em;
+		padding: 0 1.5em;
+		font-family: "Roboto", sans-serif;
+		font-size: 1.2rem;
+		color: rgb(168, 168, 168);
+		text-align: center;
+
+		a {
+			color: rgb(168, 168, 168);
+		}
+	}
 }
