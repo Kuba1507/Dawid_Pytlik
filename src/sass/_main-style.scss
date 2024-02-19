@@ -679,10 +679,17 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	padding: 1em;
 	height: calc(100vh - 80px);
+	text-align: center;
 
 	.main {
 		font-size: 5rem;
+	}
+
+	.submain {
+		margin-top: 1em;
+		font-size: 2rem;
 	}
 }
 
