@@ -371,6 +371,7 @@ main {
 		background-position: center;
 		margin: 1.5em 0;
 		color: $white;
+		overflow: hidden;
 
 		&__box {
 			display: flex;

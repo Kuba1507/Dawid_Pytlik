@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Roboto:wght@300;400;700&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/style.min.css">
 </head>
 
@@ -43,9 +44,11 @@
     <header class="header">
         <div class="wrapper">
             <div class="header__box">
-                <p class="header__box-description">Ihre beste Wahl</p>
-                <h1 class="header__box-heading">Installationen, Ausbauarbeiten, <span>Reparaturen</span></h1>
-                <button class="header__box-cta-button">Erkunden Sie unser Angebot</button>
+                <p class="header__box-description" data-aos="fade-up">Ihre beste Wahl</p>
+                <h1 class="header__box-heading" data-aos="fade-up">Installationen, Ausbauarbeiten,
+                    <span>Reparaturen</span>
+                </h1>
+                <button class="header__box-cta-button" data-aos="fade-up">Erkunden Sie unser Angebot</button>
             </div>
         </div>
         <div class="header__shadow"></div>
@@ -91,7 +94,7 @@
         <section class="company-advantages">
             <img src="dist/img/split.svg" class="split">
             <div class="wrapper">
-                <div class="cards-box">
+                <div class="cards-box" data-aos="zoom-in">
                     <div class="cards-box__card">
                         <div class="cards-box__card-icon">
                             <img src="dist/img/medal.svg" alt="Ikonka z medalem">
@@ -193,11 +196,11 @@
         <section class="questions">
             <div class="wrapper">
                 <div class="questions__box">
-                    <div class="questions__box-text">
+                    <div class="questions__box-text" data-aos="fade-right">
                         <h3>Haben Sie noch Fragen?</h3>
                         <p>Kontaktieren Sie uns und erfahren Sie mehr</p>
                     </div>
-                    <div class="questions__box-contact">
+                    <div class="questions__box-contact" data-aos="fade-left">
                         <img src="dist/img/phone.svg" alt="Ikonka telefonu">
                         <p><span>PL</span> &nbsp; +49 15510410541</p>
                         <p><span>DE</span> &nbsp; +48 663522142</p>
@@ -212,7 +215,7 @@
 
                 <div class="gallery-container">
 
-                    <div class="items-links">
+                    <div class="items-links" data-aos="fade-up">
                         <span class="items-links__link menu-active" data-name="all">Alle anzeigen</span>
                         <span class="items-links__link" data-name="electro">Elektrische Anlagen</span>
                         <span class="items-links__link" data-name="bathroom">Badezimmer</span>
@@ -221,7 +224,7 @@
                         <span class="items-links__link" data-name="repairs">Aktuelle Reparaturen</span>
                     </div>
 
-                    <div class="filtered-gallery">
+                    <div class="filtered-gallery" data-aos="fade-up" data-aos-delay="300">
 
                         <div class="project-img" data-name="all"><img src="dist/img/all-8.jpeg"
                                 alt="Foto von allgemeinen Bauarbeiten"></div>
@@ -321,15 +324,15 @@
                 <div class="wrapper">
 
                     <div class="contact__hero-box">
-                        <div class="contact__hero-box-block">
+                        <div class="contact__hero-box-block" data-aos="zoom-in">
                             <p>dawid pytlik</p>
                             <p>91257 PEGNITZ</p>
                             <p>Deutschland</p>
                         </div>
-                        <div class="contact__hero-box-block">
+                        <div class="contact__hero-box-block" data-aos="zoom-in">
                             <p>pytlik.dawid@gmail.com</p>
                         </div>
-                        <div class="contact__hero-box-block">
+                        <div class="contact__hero-box-block" data-aos="zoom-in">
                             <p><span>PL | ENG</span> &nbsp; +49 15510410541 (Dawid)</p>
                             <p><span>DE</span> &nbsp; +48 692119523 (Jarek)</p>
                             <p>WhatsApp IE +353 852122147</p>
@@ -367,6 +370,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="dist/js/aos.min.js"></script>
     <script src="dist/js/script.min.js"></script>
 </body>
 
